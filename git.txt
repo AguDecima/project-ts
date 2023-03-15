@@ -11,3 +11,14 @@
 // pull: traigo las cosas nuevas
 
 // merge: es la forma de fusionar las branch
+
+// comandos
+
+// git init
+// git add .
+// git commit 'mensaje'
+// git checkout branch/commit
+// git log
+// git clone url
+// git branch
+// git checkout -b name
