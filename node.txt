@@ -1,0 +1,18 @@
+node js 
+-------
+
+package.json // contiene las dependencias de mi proyecto
+
+
+
+
+npm comandos (sirve para instalar las dependencias)
+-----------
+
+npm init
+npm install libname
+npm i libname
+npm uninstall libname
+
+
+node_modules // es donde se van guardando las librerias que uso
