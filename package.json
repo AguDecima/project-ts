@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AguDecima/project-ts#readme",
   "dependencies": {
+    "@types/node": "^18.15.3",
     "typescript": "^5.0.2",
     "uuid": "^9.0.0"
   }
