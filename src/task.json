@@ -1,0 +1,14 @@
+[
+    {
+        "user": "agu",
+        "skills": ["ts", "java", "c", "js"]  
+    },
+    {
+        "user": "javi",
+        "skills": ["js"]  
+    },
+    {
+        "user": "rafa",
+        "skills": ["c", "ts"]  
+    }
+]
