@@ -1,5 +1,13 @@
 const age: number = 19
-const country: string = 'arg'
+const country: string = 'bol'
+
+// && AND (age > 18 && country === "arg" )
+// || OR (age > 18 || country === "arg" )
+
+// = asignacion let a = 2;
+// == '4' == 4 // true
+// === '4' === 4 // false
+
 
 // classic version
 if (age > 18) {
