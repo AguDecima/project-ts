@@ -4,10 +4,18 @@ type Dev = {
 }
 
 const devs: Dev[] = require('./task.json');
-const skill = ""
+const skillWished = "c"
+const selectedDevs: Dev[] = [];
 
-// devuelvan los mejores candidatos que se adapten a mi busqueda
+// devs.forEach(dev => {
+//     dev.skills.forEach(skill => {
+//         if(skill === skillWished) selectedDevs.push(dev);
+//     })
+// })
 
 devs.forEach(dev => {
-    
+    if(dev.skills.includes(skillWished)) selectedDevs.push(dev);
 })
+
+
+console.log(selectedDevs);
