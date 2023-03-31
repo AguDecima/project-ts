@@ -9,7 +9,21 @@ export function getUser(req: Request, res: Response) {
 }
 
 export function deleteUser(req: Request, res: Response) {
+
+    const { id } = req.params;
+
     return res.send({
-        message: 'user deleted'
+        message: `user deleted ${id}`
+    }).json();
+}
+
+
+export function createUser(req: Request, res: Response) {
+
+    const body = req.body;
+
+    return res.send({
+        id: 30344833,
+        ...body
     }).json();
 }
