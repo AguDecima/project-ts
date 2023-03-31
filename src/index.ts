@@ -1,15 +1,10 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
+import { router } from './routes/user';
 
 const app: Express = express();
 
 // routes
-app.get('/user', (req: Request, res: Response) => {
-  res.send({
-    id: 38652010,
-    name: 'Agustin',
-    surname: 'Decima'
-  }).json();
-});
+app.use('/v1', router);
 
 // run server
 app.listen(3000, () => {
