@@ -11,13 +11,6 @@ app.get('/user', (req: Request, res: Response) => {
   }).json();
 });
 
-app.get('/login', (req: Request, res: Response) => {
-  res.send({
-    token: 'aqui esta tu token'
-  }).json();
-});
-
-
 // run server
 app.listen(3000, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:3000`);
