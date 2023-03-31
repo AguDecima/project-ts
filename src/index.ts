@@ -1,8 +1,24 @@
-let num: number = 2;
-let word: string = "hello"
+import express, { Express, Request, Response } from 'express';
 
-function add(a: number,b: number) : number {
-    return a + b;
-}
+const app: Express = express();
 
-console.log(add(2,3));
+// routes
+app.get('/user', (req: Request, res: Response) => {
+  res.send({
+    id: 38652010,
+    name: 'Agustin',
+    surname: 'Decima'
+  }).json();
+});
+
+app.get('/login', (req: Request, res: Response) => {
+  res.send({
+    token: 'aqui esta tu token'
+  }).json();
+});
+
+
+// run server
+app.listen(3000, () => {
+  console.log(`⚡️[server]: Server is running at http://localhost:3000`);
+});
