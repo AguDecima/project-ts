@@ -7,5 +7,5 @@ export const router = Router();
 router.get('/user', getUser);
 // create GET /user/:id
 router.post('/user', createUser);
-router.delete('/delete/:id', deleteUser);
+router.delete('/user/:id', deleteUser);
 router.get('/pokemon', getPokemon);
