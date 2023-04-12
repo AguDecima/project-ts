@@ -1,19 +1,9 @@
-import express, { Express } from 'express';
-import { router } from './routes/user';
-import bodyParser from 'body-parser';
+import { User } from "./user";
 
-const app: Express = express();
+const u1 = new User('agustin','decima');
 
-// body parser
-app.use(bodyParser.json());       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-}));
+console.log(u1.info());
 
-// routes
-app.use('/v1', router);
 
-// run server
-app.listen(3000, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:3000`);
-});
+
+

@@ -1,0 +1,8 @@
+Class
+    * Attributes
+    * Methods
+    * Constructs
+    * Get & Set (encapsulation)
+    
+Interface
+
