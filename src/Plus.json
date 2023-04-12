@@ -1,0 +1,15 @@
+[
+    {
+       "Plu":  "BANANA",
+       "Datas": ["calcio", "pesable", "perecedero"] 
+    },
+    {
+        "Plu": "PALTA",
+        "Datas": ["hierro", "pesable", "perecedero"]
+    },
+    {
+        "Plu": "Lata Arveja",
+        "Datas": ["perecedero"]
+    }
+
+]

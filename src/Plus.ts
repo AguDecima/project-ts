@@ -4,11 +4,14 @@ type Plu = {
 
 }
 
-const Plus: Plu[] = require(' ./Plus.json');
-const Data: "perecedero";
+const Plus: Plu[] = require('./Plus.json');
+const Data: string[] =  ["perecedero"] ;
 
 Plus.forEach( Plu => {
-    if(Plu === Datas) console.log(Plu);
+     console.log( Plu);
+    
+    
+    
     
 })
 

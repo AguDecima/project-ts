@@ -1,7 +1,6 @@
 "use strict";
-const Plus = require(' ./Plus.json');
-const Data;
+const Plus = require('./Plus.json');
+const Data = ["perecedero"];
 Plus.forEach(Plu => {
-    if (Plu === Datas)
-        console.log(Plu);
+    console.log(Plu);
 });
