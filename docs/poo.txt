@@ -3,6 +3,6 @@ Class
     * Methods
     * Constructs
     * Get & Set (encapsulation)
+    * Inheritance
     
 Interface
-
