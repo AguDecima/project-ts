@@ -28,4 +28,8 @@ export class Vehiculo {
         this._modelo = m;
         this._marca = ma;
     }
+
+    getInfo() {
+        return ''
+    }
 }
