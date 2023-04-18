@@ -1,5 +1,8 @@
 import { Request, Response } from "express";
 
+import users from '../bd/users.json';
+
+
 export function getUser(req: Request, res: Response) {
     return res.send({
         id: 38652010,
@@ -7,10 +10,29 @@ export function getUser(req: Request, res: Response) {
         surname: 'Decima'
     }).json();
 }
+export function getUserById(req: Request, res: Response) {
+    const { id } = req.params; // recibir id del params
+
+    const usuario = users.filter(u => u.dni.toString() === id); // buscar el usuario de la bd
+    if (usuario.length === 0) {
+        return res.status(404).send({
+            message: `user not exists ${id}`
+        }).json();
+    } 
+    return res.send({
+        ...usuario[0]
+    }).json();
+}
 
 export function deleteUser(req: Request, res: Response) {
 
     const { id } = req.params;
+
+    const isExist = users.some(u => u.dni.toString() === id);
+
+    if (isExist == false) return res.status(404).send({
+        message: `user doesn't exist`
+    }).json();
 
     return res.send({
         message: `user deleted ${id}`

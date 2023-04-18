@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import { deleteUser, getUser, createUser } from '../controller/user';
+import { deleteUser, getUser, createUser, getUserById} from '../controller/user';
+import { getPokemon } from '../controller/pokemon';
 
 export const router = Router();
 
 router.get('/user', getUser);
-// create GET /user/:id
+router.get('/user/:id', getUserById);                     /// create GET /user/:id
 router.post('/user', createUser);
-router.get('/delete/:id', deleteUser);
+router.delete('/user/:id', deleteUser);
+router.get('/pokemon', getPokemon);
