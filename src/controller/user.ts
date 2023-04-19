@@ -24,17 +24,18 @@ export function deleteUser(req: Request, res: Response) {
 
     const isExist = users.some(u => u.dni.toString() === id);
 
-    if(isExist == false) return res.status(404).send({
+    if (isExist == false) return res.status(404).send({
         message: `user doesn't exist`
     }).json();
-    
+
     return res.send({
         message: `user deleted ${id}`
     }).json();
 }
 
 
-export function createUser(req: Request, res: Response) {
+// named function
+export function createUser1(req: Request, res: Response) {
 
     const body = req.body;
 
@@ -43,3 +44,19 @@ export function createUser(req: Request, res: Response) {
         ...body
     }).json();
 }
+
+// arrow function
+const createUser2 = (req: Request, res: Response) => {
+    const body = req.body;
+
+    return res.send({
+        id: 30344833,
+        ...body
+    }).json();
+}
+
+// anonymous function
+((a: number, b: number) => {
+    console.log(a + b);
+})(1, 2);
+
