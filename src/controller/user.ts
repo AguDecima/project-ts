@@ -24,6 +24,13 @@ export function getUserById(req: Request, res: Response) {
     }).json();
 }
 
+function getUserById(req: Request, res: Response) {
+    // recibir id del params
+    // buscar el usuario de la bd
+    // retornar usuario si es que existe
+    // sino devoler error
+}
+
 export function deleteUser(req: Request, res: Response) {
 
     const { id } = req.params;
@@ -40,7 +47,8 @@ export function deleteUser(req: Request, res: Response) {
 }
 
 
-export function createUser(req: Request, res: Response) {
+// named function
+export function createUser1(req: Request, res: Response) {
 
     const body = req.body;
 
@@ -49,3 +57,19 @@ export function createUser(req: Request, res: Response) {
         ...body
     }).json();
 }
+
+// arrow function
+const createUser2 = (req: Request, res: Response) => {
+    const body = req.body;
+
+    return res.send({
+        id: 30344833,
+        ...body
+    }).json();
+}
+
+// anonymous function
+((a: number, b: number) => {
+    console.log(a + b);
+})(1, 2);
+
