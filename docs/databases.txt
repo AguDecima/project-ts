@@ -1,0 +1,34 @@
+Relacionales - (SQL)
+
+* MySQL
+* Postgres
+* SQL Server
+* MariaDB
+* Aurora
+* SQlite
+
+Topics
+
+* Tablas
+* Atributos
+* Index
+* Query
+* Relaciones
+* Llaves (PK - Primary Key) y Llaves compuestas
+
+-------------------------
+
+No Relacionales - (NoSQL)
+
+* DynamoDB 
+* MongoDB (findAll, findById, find(name: 'Javier'))
+* DocumentDB
+* Query
+
+Topics
+
+* Documents
+* Attributes
+* PK y SK
+
+
