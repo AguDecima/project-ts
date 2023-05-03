@@ -4,5 +4,7 @@ Class
     * Constructs
     * Get & Set (encapsulation)
     * Inheritance
+    * Composition
+    * Association
     
 Interface
